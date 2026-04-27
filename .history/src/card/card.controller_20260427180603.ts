@@ -1,9 +1,9 @@
-import { Controller, Post } from "@nestjs/common";
+import { Controller, } from "@nestjs/common";
 
 @Controller()
 export class CardController{
 
-    @Post()
+    @Get()
     validateCard(){
 
     }

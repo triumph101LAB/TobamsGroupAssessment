@@ -1,3 +1,6 @@
 import { Controller,Get } from "@nestjs/common";
 
-export class CardController{}
+export class CardController{
+
+    @Get()
+}

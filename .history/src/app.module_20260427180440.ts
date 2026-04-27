@@ -3,10 +3,9 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { CardController } from './card/card.controller';
 import { CardService } from './card/card.service';
-import { CardModule } from './card/card.module';
 
 @Module({
-  imports: [CardModule],
+  imports: [],
   controllers: [AppController,CardController],
   providers: [AppService,CardService],
 })
