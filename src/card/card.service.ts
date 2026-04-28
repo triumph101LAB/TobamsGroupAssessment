@@ -32,11 +32,7 @@ export class CardService {
       shouldDoubled = !shouldDoubled;
     }
     const passed = sum % 10;
-    // let isValid;
-    // if (passed == 0){
-    //   isValid = true 
-    // }
-    // else { isValid = false} 
+  
     const isValid = passed === 0
     // Network Identification
       const patterns = {
