@@ -6,12 +6,11 @@ export class CardService {
     // Input sanitzation
     // CardNetworks being concidered are verve, mastercard and Visa
     const cleanedString = cardNumber.replace(/\D/g, "");
-    const digitsThere = /^\d+$/.test(cleanedString);
-    if (!digitsThere)
-      throw new HttpException(
-        "Some Characters there are not digits",
-        HttpStatus.BAD_REQUEST,
-      );
+   // const digitsThere = /^\d+$/.test(cleanedString);
+   if (cleanedString.length === 0)
+     throw new HttpException(
+    "No valid digits found", HttpStatus.BAD_REQUEST
+  );
     const cardLength = cleanedString.length;
     if (cardLength < 16 || cardLength > 19)
       throw new HttpException(
