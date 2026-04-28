@@ -83,7 +83,7 @@ Also, I have been using Nestjs for a while now, and I am more comfortable with i
 Scoped to Visa, Mastercard, and Verve — the three dominant card 
 networks in the Nigerian market. Verve is included specifically 
 because it is the most widely used domestic network, issued by 
-fintechs like OPay, Moniepoint, and PalmPay. and also the card lenghts are used are 16, 19.
+fintechs like OPay, Moniepoint, and PalmPay. and also the card lenghts I used are 16, 19.
 The geneal standard is 16, but some networks used 19
 
 **Sanitization Strategy**
